@@ -148,11 +148,31 @@ section.show-animate .animate {
 /* TODO: Opgave 2.1
    Lav en ny sluttilstand .anim-skew, 
    som kombinerer translateX(0), skew(-20deg) og scale(1.16) */
-
+.sec5.show-animate .animate.anim-skew {
+  transform: translateX(0) skew(-20deg) scale(1.16);
+}
 
 /* TODO: Opgave 2.2
    Lav en ny sluttilstand .anim-rotate, 
    som kombinerer translateX(0), rotate(210deg) og scale(1.2) */
+.sec5.show-animate .animate.anim-rotate {
+  transform: translateX(0) rotate(210deg) scale(1.2);
+}
+
+/* ----------------------------------------------
+   SEC6 - START OG SLUTTILSTANDE
+---------------------------------------------- */
+.sec6 .animate {
+    transform: perspective(500px) rotateX(90deg) translateZ(-200px);
+}   
+
+.sec6.show-animate .animate {
+    transform: perspective(500px) rotateX(0deg) translateZ(0);
+}
+
+.sec6.show-animate .animate.anim-pop {
+    transform: scale(5) translateY(190px);
+}
 
 
 /* ----------------------------------------------

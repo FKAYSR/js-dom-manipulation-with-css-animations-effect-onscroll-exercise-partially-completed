@@ -52,6 +52,16 @@ if (sectionOne) {
    3) Tilføj en click-eventlistener
    4) Brug this.classList.toggle("anim-scale") inde i funktionen
 --------------------------------------------------- */
+const dogBtn = document.getElementById("dogElem");
+const soundDog = new Audio();
+soundDog.src = "sound/dog.wav";
+
+if (dogBtn) {
+   dogBtn.addEventListener("click", () => {
+      dogBtn.classList.toggle("anim-scale");
+      soundDog.play();
+   })
+}
 
 /* -------------------------------------------------
    🐻 ISBJØRN → anim-rotate
@@ -65,6 +75,16 @@ if (sectionOne) {
    3) Tilføj en click-eventlistener
    4) Brug this.classList.toggle("anim-rotate")
 --------------------------------------------------- */
+const polarBtn = document.getElementById("bearElem");
+const soundPolar = new Audio();
+soundPolar.src = "sound/ice-truck-theme.wav";
+
+if (polarBtn) {
+  polarBtn.addEventListener("click", () => {
+    polarBtn.classList.toggle("anim-rotate");
+    soundPolar.play();
+  });
+}
 
 /* -------------------------------------------------
    🐴 HEST → anim-skew
@@ -78,6 +98,16 @@ if (sectionOne) {
    3) Tilføj en click-eventlistener
    4) Brug this.classList.toggle("anim-skew")
 --------------------------------------------------- */
+const horseBtn = document.getElementById("horseElem");
+const soundHorse = new Audio();
+soundHorse.src = "sound/horse-eating-carrot.wav";
+
+if (horseBtn) {
+  horseBtn.addEventListener("click", () => {
+    horseBtn.classList.toggle("anim-skew");
+    soundHorse.play()
+  });
+}
 
 /* -------------------------------------------------
    4) OPGAVE: LYD VED KLIK
@@ -100,6 +130,8 @@ const soundHorse = ...
 const soundBear = ...
 */
 
+// !har jeg skrevet højere oppe så det står samlet med Btn konstanterne!
+
 /* -------------------------------------------------
    5) OPGAVE: NY SEKTION – SEC6
    Du skal selv tilføje en ny sektion i HTML (sec6),
@@ -113,3 +145,15 @@ const soundBear = ...
 --------------------------------------------------- */
 
 // TODO: Tilføj din egen klikfunktion for billedet i sec6 her
+
+const pandaBtn = document.getElementById("redPandas");
+const soundPandas = new Audio();
+soundPandas.src = "sound/red-tailed-hawk.mp3";
+
+if (pandaBtn) {
+   pandaBtn.addEventListener("click", () => {
+      pandaBtn.classList.toggle("anim-pop");
+      soundPandas.play()
+   })
+}
+
